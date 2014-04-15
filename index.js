@@ -146,19 +146,3 @@
   };
 
 }));
-
-function onWheel(e) {
-  e.preventDefault();
-  console.log(e);
-}
-
-wheel.on(window,onWheel,false);
-wheel.on(window,onWheel,true);
-
-setTimeout(function(){
-  wheel.off(window,onWheel,false);
-},2000);
-
-setTimeout(function(){
-  wheel.off(window,onWheel,true);
-},4000);
