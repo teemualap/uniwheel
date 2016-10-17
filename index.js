@@ -110,6 +110,8 @@
 
   function _removeWheelListener( elem, eventName, callback, useCapture ) {
 
+    var cb;
+
     if (support === "wheel") {
       cb = callback;
     } else {
